@@ -31,3 +31,18 @@ document.getElementById('formContact').addEventListener('submit', function(event
 
 
 
+const text = "Welcome to My Website"; // The text to type
+        const titleElement = document.getElementById("title"); // Target the title element
+        let index = 0; // Start from the first letter
+
+        function typeWriter() {
+            if (index < text.length) {
+                titleElement.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100); // Set the speed (100ms per character)
+            }
+        }
+
+        typeWriter(); // Start the typing effect
+
+
