@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="min-h-screen  bg-slate-800 text-white font-serif">
     <header>
-        <nav class="flex  lg:flex-row mt-4 rounded-2xl lg:mr-2 lg:ml-2 lg:space-y-0 p-4 justify-between gap-3 flex-wrap grid-flow-col-1 lg:grid-cols-1 bg-gray-600 
+        <nav class="flex  lg:flex-row  rounded-2xl  hover:bg-gray-900 lg:space-y-0 p-4 justify-between gap-3 flex-wrap grid-flow-col-1 lg:grid-cols-1 w-full z-50 top-0 fixed bg-gray-600 
         ">
             <a href="#biographie" class="p-3  bg-gray-800 rounded-2xl text-teal-400  transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-white hover:uppercase"> Biographie </a>
             <a href="#competence" class="p-3 bg-gray-800  rounded-2xl text-teal-400 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-white hover:uppercase "> Compétence</a>
@@ -21,99 +22,98 @@
     
 
 <main>
-    <section class="mt-20 flex flex-col justify-between  lg:flex-row  lg:mr-28 lg:ml-28">
-        <div class="ml-5">  
-            <h1 class="text-teal-400 text-4xl font-serif font-bold"> Nadima Mokhtari</h1> 
-            <p class="mt-4">Hello my name is Nadima Mokhtari iam 22 year old iam afghan</p>
+    <section id="biographie" class="flex flex-col gap-4 lg:flex-row lg:justify-between w-4/5 mx-auto  ">
+        <div class=" w-full mt-60 text-center lg:text-left lg:w-1/2 lg:ml-5">  
+            <h1 class="text-teal-400  text-2xl font-serif font-bold lg:text-5xl"> Nadima Mokhtari</h1> 
+            <p class="-2xl">Je m'appelle Nadima Mokhtari , j'ai 22 ans et je vis à Marvejols</p>
         </div>
-        <div class="mr-5  "  >
-            <img src="/image/nadima.png" alt="Image" class="w-40 h-48  rounded-3xl p-4 bg-white drop-shadow-2xl shadow-lg  shadow-cyan-500/50">
+        <div class="mr-5 justify-items-center mt-5"  >
+            <img src="/portfolio/image/image.jpg" alt="Image" class="w-44 h-50  rounded-2xl drop-shadow-2xl  lg:mt-20  shadow-2xl shadow-blue-900 transform transition-transform  hover:scale-110 hover:rotate-6 ease-in-out duration-700">
         </div>
         
     </section>
 
-    <section class=" flex flex-col lg:flex-row lg:justify-evenly mt-20 flex-wrap">
-        <div class=" w-full p-4 rounded-2xl bg-gray-600   lg:w-2/5 lg:p-14 ">
+    <section id="competence" class=" flex flex-col lg:flex-row gap-4 lg:w-4/5 lg:mt-10 mx-auto">
+        <div class="w-full p-4 mt-10  rounded-2xl bg-gray-600  lg:w-1/2 lg:p-10  hover:bg-gray-900">
         <h2 class="text-teal-400 text-2xl font-serif font-bold ml-5 ">Compétence</h2>
-        <ul class="grid  grid-cols-2 lg:grid-cols-2 gap-8">
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">HTML</li>
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">CSS / TailwindCSS</li>
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">JavaScript</li>
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">Git / GitHub</li>
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">JSON / API REST</li>
-            <li class="bg-gray-800 p-4 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">UI Design</li>
+        <ul class="grid  grid-cols-2 lg:grid-cols-2 gap-4">
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">HTML</li>
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">CSS / TailwindCSS</li>
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">JavaScript</li>
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">Git / GitHub</li>
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">JSON / API REST</li>
+            <li class="bg-gray-800 p-3 rounded-lg  mt-3 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 hover:text-teal-600 hover:uppercase">UI Design</li>
         </ul>
             <aside class="flex justify-between mt-5">
-            <img src="/image/css.png" alt="image css" class="w-5 h-5">
-            <img src="/image/html.jpg" alt="image html" class="w-5 h-5">
-            <img src="/image/js.png" alt="image js" class="w-5 h-5">
+            <img src="/portfolio/image/stiker css.png" alt="image css" class="w-7 h-7 transform transition-all duration-300 hover:scale-150">
+            <img src="/portfolio/image/stiker html.png" alt="image html" class="w-7 h-7 transform transition-all duration-300 hover:scale-150">
+            <img src="/portfolio/image/stiker js.png" alt="image js" class="w-7 h-7 transform transition-all duration-300 hover:scale-150">
             </aside>
         </div>
-        <div class=" w-full p-4 mt-10 rounded-2xl space-y-4 bg-gray-600 lg:mt-0 lg:w-2/5 lg:p-14 ">
+        <div id="formation" class=" w-full p-8  mt-10  rounded-2xl    bg-gray-600 lg:w-1/2 lg:p-20 hover:bg-gray-900">
             <h2 class="text-teal-400 text-2xl font-serif font-bold ml-5 ">Formation</h2>
             <h4 class="ml-5 ">2023   Formation PROJET PRO  -    CFPPA (48)</h4>
             <h4 class="ml-5">2022   Diplôme de langue A1  -  Greta  (48)</h4>
             <h4 class="ml-5">2021   Diplôme de Microsoft office informatique de gestion</h4>
             <h4 class="ml-5">2021   Diplôme de Microsoft office informatique de gestion</h4>
-            <h4 class="ml-5">2018   Diplôme d’anglais</h4>
+            <h4 class="ml-5">2018   Diplôme d'anglais</h4>
             <h4 class="ml-5">2019   Baccalauréat (afghanistan) </h4>
         </div>
     </section>
 
-    <section class="flex flex-col lg:flex-row lg:justify-evenly mt-10 flex-wrap">
-        <h2 class="text-3xl font-bold mb-6 text-center lg:text-center w-full text-teal-400">Projet</h2>
-        <div class="flex flex-wrap lg:flex-wrap  lg:justify-evenly gap-6   ">
-            <div class="bg-gray-600  p-6 rounded-2xl w-full  lg:w-2/5   ">
+    <section id="projet personnels" class="mt-10">
+        <h2 class="text-3xl font-bold mb-6 mt-8 text-center lg:text-center w-full text-teal-400 ">Projet</h2>
+        <div class="lg:grid lg:grid-cols-2  lg:gap-4 lg:w-4/5 mx-auto "> 
+            <div class="mb-3 bg-gray-600 hover:bg-gray-900 lg:w-full sm:w-full rounded-2xl p-8 ">
                 <h4 class="text-center mb-5">project de personnage</h4>
-                <img src="/image/Capture d'écran 2025-01-16 135101.png" alt="image personnage"class="ml-2 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 ease-in-out duration-700">
-                <p class="mt-5">this my firs project</p>
+                <img src="/portfolio/image/Capture d'écran 2025-01-16 135101.png" alt="image personnage"class="ml-2 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform duration-300 hover:scale-110 hover:rotate-6 ease-in-out duration-700 ">
+                <p class="mt-5">C'est mon première bref</p>
                 <div class="flex justify-between mt-4">
-                    <a href="#" class="text-teal-500 " >Demo</a>
-                    <a href="#" class="text-teal-500 ">GitHub</a>
+                    <a href="https://nadima-mokhtari.github.io/Aryana/" class="text-teal-500 transition-transform transform hover:scale-150" >Demo</a>
+                    <a href="https://github.com/nadima-mokhtari/Aryana" class="text-teal-500 transition-transform transform hover:scale-150">GitHub</a>
                 </div>
             </div>
 
 
 
-            <div class="bg-gray-600  p-4 rounded-2xl w-full lg:w-2/5  ">
+            <div class="bg-gray-600 mb-5 sm:w-full hover:bg-gray-900 p-8 rounded-2xl lg:w-full ">
                 <h4 class="text-center mb-5"> projet de pasta</h4>
-                <img src="/image/pasta.png" alt="image pasra" class="ml-2 w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-110 hover:rotate-6 ease-in-out duration-700">
-                <p class="mt-5">this my firs project</p>
+                <img src="/portfolio/image/pasta.png" alt="image pasra" class="ml-2 w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-110 hover:rotate-6 ease-in-out duration-700">
+                <p class="mt-5">c'est projet de pasta</p>
                 <div class="flex justify-between mt-4">
-                    <a href="#" class="text-teal-500">Demo</a>
-                    <a href="#" class="text-teal-500">GitHub</a>
+                    <a href="https://nadima-mokhtari.github.io/tutoJs/" class="text-teal-500 transition-transform transform hover:scale-150">Demo</a>
+                    <a href="https://github.com/nadima-mokhtari/tutoJs" class="text-teal-500 transition-transform transform hover:scale-150">GitHub</a>
                 </div>
             </div>
 
 
 
-                <div class="bg-gray-600   rounded-2xl w-full  p-4 lg:w-2/5  ">
-                    <h4 class="text-center mb-5">projet de jeu</h4>
-                    <img src="/image/photo.png" alt="image jeu" class="w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-110 hover:rotate-6 ease-in-out duration-700">
-                    <p class="mt-5">this my firs project</p>
-                    <div class="flex justify-between mt-4">
-                        <a href="#" class="text-teal-500">Demo</a>
-                        <a href="#" class="text-teal-500">GitHub</a>
-                    </div>
+            <div class="bg-gray-600 sm:w-full mb-5 hover:bg-gray-900 p-8 rounded-2xl lg:w-full ">
+                <h4 class="text-center mb-5">projet de jeu</h4>
+                <img src="/portfolio/image/photo.png" alt="image jeu" class="w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-110 hover:rotate-6 ease-in-out duration-700">
+                <p class="mt-5">C'est le projet que j'ai fait en JS </p>
+                <div class="flex justify-between mt-4">
+                    <a href="#" class="text-teal-500 transition-transform transform hover:scale-150">Demo</a>
+                    <a href="#" class="text-teal-500 transition-transform transform hover:scale-150">GitHub</a>
                 </div>
+            </div>
 
 
-                <div class="bg-gray-600   rounded-2xl w-full  p-4 lg:w-2/5">
-                    <h4 class="text-center mb-5">projet de jeu</h4>
-                    <img src="/image/photo.png" alt="image jeu" class="w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform  hover:scale-110 hover:rotate-6 ease-in-out duration-700">
-                    <p class="mt-5">this my firs project</p>
-                    <div class="flex justify-between mt-4">
-                        <a href="#" class="text-teal-500">Demo</a>
-                        <a href="#" class="text-teal-500">GitHub</a>
-                    </div>
+            <div class="bg-gray-600  mb-5 sm:w-full hover:bg-gray-900 p-8  rounded-2xl lg:w-full ">
+                <h4 class="text-center mb-5">projet de jeu</h4>
+                <img src="/portfolio/image/jue.png" alt="image jeu" class="w-96 h-48 justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform  hover:scale-110 hover:rotate-6 ease-in-out duration-700">
+                <p class="mt-5">C'est le projet que j'ai fait en TailwindCSS</p>
+                <div class="flex justify-between mt-4">
+                    <a href="#" class="text-teal-500 transition-transform transform hover:scale-150">Demo</a>
+                    <a href="#" class="text-teal-500 transition-transform transform hover:scale-150">GitHub</a>
                 </div>
+            </div>
         </div>
     </section>
 
-
-
-    <section class="flex flex-col lg:flex-row lg:justify-evenly   ">
-        <div class="w-full p-4 mt-10  rounded-2xl bg-gray-600  lg:w-2/5 lg:p-14 mr-4">
+    
+    <section id="experience" class="flex flex-col  mt-10 gap-4 lg:flex-row lg:justify-between lg:w-4/5 mx-auto">
+        <div class="w-full p-8 mt-10  rounded-2xl hover:bg-gray-900 bg-gray-600  lg:w-1/2 lg:p-10 ">
             <h2 class=" text-teal-400 text-2xl font-bold ml-5">Expérience Professionnelle</h2>
             <h4 class="ml-5">2023 - 1.5 mois Vendeuse stagiaire</h4>
             <ul class=" ml-5 list-disc list-inside">
@@ -126,31 +126,43 @@
             <ul class="ml-5 list-disc list-inside">
                 <li>sisi coiffeuse</li>
             </ul>
-            <h4 class="ml-5"> 2 semaine Agent d’acceuil stagiaire </h4>
+            <h4 class="ml-5"> 2 semaine Agent d'acceuil stagiaire </h4>
             <ul class=" ml-5 list-disc list-inside">
                 <li>france service</li>
         </div>
 
-        <div class="w-full p-4 mt-10  rounded-2xl  text-center   bg-gray-600 lg:w-2/5 lg:p-14">
-            <h2 class="text-teal-400 text-center text-2xl font-bold ml-5">CV</h2>
-            <button type="button" class=" bg-teal-500 p-5 rounded mt-24 text-white">Telécharger le CV</button>
+        <div id="cv" class="w-full p-5 mt-10  rounded-2xl  text-center  hover:bg-gray-900 bg-gray-600 lg:w-1/2 lg:p-20 ">
+            <h2 class="mb-5 text-teal-400 text-center text-2xl font-bold ml-5">CV</h2>
+            <button type="button" class=" bg-teal-500 text-white px-6 py-3 rounded-lg transition-transform transform hover:scale-110 hover:bg-neutral-700">Telécharger le CV</button>
+            
         </div>
     </section>
 </main>
 
 <footer>
-    <section class="mt-10  bg-gray-600 text-center rounded-2xl text-teal-400  p-10 lg:ml-14 lg:mr-14">
-        <h2 class="text-3xl  font-bold text-center mb-6 mt-10 ">Contactez-moi</h2>
-        <form class="w-2/5 justify-self-center space-y-4">
-            <input type="text" placeholder="Nom" class="w-full p-3 rounded bg-gray-800 text-white">
-            <input type="email" placeholder="Email" class="w-full p-3 rounded bg-gray-800 text-white">
-            <textarea placeholder="Message" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
-            <button type="submit" class="w-full mb-5 bg-teal-500 p-3 rounded text-white ">Envoyer</button>
+    <section id="contact" class="mt-10 mb-5  bg-gray-600 text-center rounded-2xl text-teal-400  hover:bg-gray-900 p-9 lg:w-4/5 mx-auto">
+        <h2 class="text-3xl  font-bold text-center mb-6 mt-10 animate-pulse">Contactez-moi</h2>
+        <form id="formContact" class=" justify-self-center space-y-4">
+            <input type="text" placeholder="Nom" id="nom" class="w-full p-3 rounded bg-gray-800 text-white">
+            <input type="email" placeholder="Email" id="email" class="w-full p-3 rounded bg-gray-800 text-white">
+            <textarea placeholder="Message" id="message" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+            <a href="file:///C:/Users/mokhtari/Downloads/White%20Simple%20Student%20CV%20Resume.pdf.pdf">
+            <button type="submit" id="button" class="w-full mb-5  bg-teal-500 p-3 rounded text-white transition-transform duration-150 ease-in-out hover:scale-110 hover:bg-neutral-700 ">Envoyer</button>
+            </a>
         </form>
-        <a href="https://github.com/"> </a>
-        <img src="/image/github_PNG80.png" alt="image github" class="mt-5 w-5 h-5">  
-        <a href=""></a>
-        <a href=""></a>
+        <div class="flex justify-center gap-9 mt-10 ">
+        <a href="https://github.com/"> 
+        <img src="/portfolio/image/stiker github.png" alt="image github" class="mt-5 w-10 h-10   animate-spin duration-1000 hover:scale-150">
+    </a> 
+        <a href="">
+        <img src="/portfolio/image/stiker insta.png" alt="image instagram" class="mt-5 w-10 h-10 animate-spin duration-1000 hover:scale-150">
+    </a>
+        <a href="">
+        <img src="/portfolio/image/stikerfb.png" alt="image facebook" class="mt-5 w-10 h-10  animate-spin duration-1000 hover:scale-150">
+    </a>
+    </div>
+    
+  
     </section>
 </footer>
 
