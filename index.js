@@ -72,7 +72,7 @@ typeWriter();
 // Charger les projets dynamiquement depuis un fichier JSON
 async function loadProjects() {
     try {
-        const response = await fetch('../index.json'); // Charger le fichier JSON
+        const response = await fetch('./index.json'); // Charger le fichier JSON
         const projects = await response.json(); // Parse le JSON
         console.log(projects.projects);
         const container = document.getElementById('projects-container');
