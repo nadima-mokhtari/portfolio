@@ -81,15 +81,15 @@ async function loadProjects() {
         // Générer les cartes projets
         projects.projects.forEach(project => {
             card += `<div class= " w-full lg:w-1/2 mt-10 lg:p-2  ">
-                <div class="mb-3 bg-gray-600 hover:bg-gray-900 rounded-2xl p-10 ">
-                    <h4 class="text-center mb-5">${project.title}</h4>
-                    <img src="${project.image}" alt="${project.title}" class="ml-2  w-96  h-48  justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-125 hover:rotate-6 ease-in-out duration-700 ">
-                    <p class="mt-5">${project.description}</p>
-                    <div class="flex justify-between mt-4">
-                        <a href="${project.demoLink}" class="text-teal-500 transition-transform transform hover:scale-150 animate-bounce">Demo</a>
-                        <a href="${project.githubLink}" class="text-teal-500 transition-transform transform hover:scale-150 animate-bounce">GitHub</a>
-                    </div>
-                </div></div>`;
+                        <div class="mb-3 bg-gray-600 hover:bg-gray-900 rounded-2xl p-10 ">
+                            <h4 class="text-center mb-5">${project.title}</h4>
+                            <img src="${project.image}" alt="${project.title}" class="ml-2  w-96  h-48  justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-125 hover:rotate-6 ease-in-out duration-700 ">
+                            <p class="mt-5">${project.description}</p>
+                            <div class="flex justify-between mt-4">
+                                <a href="${project.demoLink}" target="blank" class="text-teal-500 transition-transform transform hover:scale-150 animate-bounce">Demo</a>
+                                <a href="${project.githubLink}" target="blank" class="text-teal-500 transition-transform transform hover:scale-150 animate-bounce">GitHub</a>
+                            </div>
+                        </div></div>`;
             
         });
         card += ' </div>';
