@@ -80,8 +80,8 @@ async function loadProjects() {
         let card = ' <div class= "flex flex-wrap w-full mb:flex-col lg:flex-row lg:justify-between lg:w-4/5   mx-auto">';
         // Générer les cartes projets
         projects.projects.forEach(project => {
-            card += `<div class= " lg:w-1/2 mt-10 lg:p-2  ">
-                <div class="mb-3 bg-gray-600 hover:bg-gray-900 w-full rounded-2xl p-10 ">
+            card += `<div class= " w-full lg:w-1/2 mt-10 lg:p-2  ">
+                <div class="mb-3 bg-gray-600 hover:bg-gray-900 rounded-2xl p-10 ">
                     <h4 class="text-center mb-5">${project.title}</h4>
                     <img src="${project.image}" alt="${project.title}" class="ml-2  w-96  h-48  justify-self-center object-cover rounded shadow-2xl shadow-blue-900 transform transition-transform hover:scale-125 hover:rotate-6 ease-in-out duration-700 ">
                     <p class="mt-5">${project.description}</p>
