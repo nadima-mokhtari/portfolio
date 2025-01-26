@@ -1,36 +1,37 @@
 {
-    "projects": [
-      {
-        "title": "Project de personnage",
-        "image": "./image/personnage.png",
-        "description": "C'est mon première brief",
-        "demoLink": "https://nadima-mokhtari.github.io/Aryana/",
-        "githubLink": "https://github.com/nadima-mokhtari/Aryana"
-      },
-      {
-        "title": "Projet de pasta",
-        "image": "./image/vista.png",
-        "description": "c'est un site de resturant que j'ai crée",
-        "demoLink": "https://nadima-mokhtari.github.io/tutoJs/",
-        "githubLink": "https://github.com/nadima-mokhtari/tutoJs"
-      },
-      {
-        "title": "Projet de jeu",
-        "image": "./image/photo.png",
-        "description": "C'est le projet que j'ai fait en JS",
-        "demoLink": "#",
-        "githubLink": "#"
-      },
-      {
-        "title": "Projet de jeu 2",
-        "image": "./image/jue.png",
-        "description": "C'est le projet que j'ai fait en TailwindCSS",
-        "demoLink": "#",
-        "githubLink": "#"
-      }
-    ]
-  }
-  
+  "projects": [
+    {
+      "title": "projet d'intégration page personnage",
+      "image": "./image/personnage.png",
+      "description": "C'est le project que j'ai fait en HTML, CSS and js",
+      "demoLink": "https://nadima-mokhtari.github.io/Aryana/",
+      "githubLink": "https://github.com/nadima-mokhtari/Aryana"
+    },
+    {
+      "title": "Projet site de resturant",
+      "image": "./image/vista.png",
+      "description": "c'est un site de resturant que j'ai crée",
+      "demoLink": "https://nadima-mokhtari.github.io/tutoJs/",
+      "githubLink": "https://github.com/nadima-mokhtari/tutoJs"
+    },
+    {
+      "title": "Projet de jeu",
+      "image": "./image/photo.png",
+      "description": "C'est le projet que j'ai fait en JS",
+      "demoLink": "https://nadima-mokhtari.github.io/tictactoe/",
+      "githubLink": "https://github.com/nadima-mokhtari/tictactoe"
+    },
+    {
+      "title": "Projet d'animation",
+      "image": "./image/jue.png",
+      "description": "C'est le projet que j'ai fait en TailwindCSS",
+      "demoLink": "https://nadima-mokhtari.github.io/tutoJs/tailwind.html",
+      "githubLink": "https://github.com/nadima-mokhtari/tutoJs"
+
+    }
+  ]
+}
+
 
 
 
